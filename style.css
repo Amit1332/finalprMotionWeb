@@ -12,6 +12,18 @@ body{
     min-height: 100vh;
     width: 100%;
 }
+.prg{
+    height: 5px;
+    width: 50px;
+    background-color: rgb(252, 6, 92);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+
+
 .nav{
     z-index: 99;
     width: 100%;
@@ -23,6 +35,7 @@ body{
     color: rgb(210, 206, 206);
     font-weight: 100;
     font-family: "gilroy";
+    /* background-color: red; */
 }
 .nav h3{
 font-size: 1.5vw;
@@ -116,6 +129,7 @@ font-size: 1.5vw;
     min-height:100%;
     width: 100%;
     top: 100%;
+    
     background-color: black;
 }
 
@@ -268,7 +282,7 @@ overflow: hidden;
 .photo{
     height: 50vh;
     width: 18%;
-
+position: absolute;
     background-image: url(https://images.unsplash.com/photo-1604367463500-c62f6d5eaa86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHBvc3RlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 background-position: center;
 background-size: cover;
@@ -276,7 +290,7 @@ background-size: cover;
 .photos{
     display: flex;
 position: absolute;  
-left: 70%;
+left: 100%;
 /* margin-right: -85vw;
 margin-left: 20vw; */
 /* background-color:cyan; */
@@ -302,6 +316,11 @@ margin-left: 20vw; */
     position: relative;
     min-height:90vh;
     width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     /* background-color: rgb(26, 26, 26); */
     box-shadow: 0px 0px 10px white;
     padding: 0px 25px;
@@ -312,15 +331,22 @@ margin-left: 20vw; */
     color: white;
     font-family:"nunito";
     bottom: 0;
-    position: absolute;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
    letter-spacing: 1vw;
    text-align: center;
-
+/* background-color: red; */
 
   
 }
 .four h1 span{
     font-size: 15vw;
+    transition: all .5s ease-out;
+    
+
 
 }
 .imageroll{
@@ -332,8 +358,9 @@ margin-left: 20vw; */
 }
 
 .poster{
-    height: 20vh;
-    width: 12vw;
+    height: 12vh;
+    width: 7vw;
+    opacity: 0;
     /* background-color: yellow; */
     margin: 10vh 1vw;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1hiNz2bqAT_fLg2OWLPTsjtTtzTQJKCefg&usqp=CAU);
@@ -404,11 +431,16 @@ flex-direction: column;
 }
 .five .footer .ttxt{
     font-family: "nunito";
+    /* background-color: yellow; */
 
 }
 .five .footer .ttxt h2{
     color: white;
     font-size: 2vw;
+    cursor: pointer;
+}
+.five .footer .ttxt h2:hover{
+    color: yellow;
 }
 .five .footer .ttxt h4{
     color: white;
@@ -417,31 +449,18 @@ flex-direction: column;
     justify-content: center;
     font-size: 2vw;
 }
+.five .footer .ttxt h4:hover{
+    color: yellow;
+}
 .five .footer .ttxt h4 i{
     font-size: 3vw;
     color:crimson;
 }
+
 .five .footer .ttxt h4 i:nth-child(2){
     color: rgb(255, 89, 0);
 }
-.five .footer .img{
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.five .footer .img i{
-    color: crimson;
-    font-size: 10vw;
-}
-.five .footer .img i:nth-child(2){
-    font-size: 6vw;
-    color: orangered;
-}
-.five .footer .img i:nth-child(3){
-    font-size: 4vw;
-    color: rgb(0, 119, 255);
-}
+
 
 .five .txt h1{
 font-size: 10vw;
@@ -450,24 +469,91 @@ line-height: 10vw;
 color: white;
 /* background-color: red; */
 }
+
+.simg{
+    right: 27%;
+    position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   /* background-color: yellow; */
+
+}
+
+.sig{
+    object-position: center;
+    object-fit: cover;
+    height: 5vw ;
+    width: 5vw;
+    transform: translate(-50%,-50%);
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    position: fixed;
+    display: none;
+    pointer-events: none;
+
+}
+
+.footer .img{
+    position: relative;
+    height:40vh ;
+    width: 20%;
+    /* background-color: red; */
+    display: flex;
+    overflow: hidden;
+
+    
+}
+
+.img-1{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+/* background-color: yellow; */
+/* opacity: 0; */
+}
+.img-1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.img-1:nth-child(2n){
+    /* background-color: crimson; */
+    left:100% ;
+}
+.img-1:nth-child(3){
+    /* background-color: rgb(231, 218, 221); */
+    left:200% ;
+}
+
+
+
+
 @media (max-width:500px) {
-    .one{
-        width: 500px;
-    }
+    
 
     #banner{
       height: 11vh;
+      width: 40vw;
       
     }
-    .two{
-        width:500px
-    }
+    
     .cass{
         min-height: 40vh;
     }
     .cass .box{
-        height: 200px;
-        width: 200px;
+        height: 350px;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    #rtext {
+        top: 90%;
+        position: absolute;
+        right: 15%;
     }
     .cassfooter{
         margin-top: 50px;
@@ -489,13 +575,18 @@ color: white;
     width: 12vw;
 }
 .four{
-    min-height: 60vh;
+    min-height: 80vh;
 }
 .four h1 span{
     font-size: 13vw;
 }
 .five{
-    height: 70vh;
+    height: 100vh;
+}
+
+.footer .img{
+    height: 30vh;
+    width: 60%;
 }
 
 } 
