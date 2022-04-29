@@ -17,56 +17,56 @@ gsap.to("#banner",{
 })
 
 
-// gsap.to("#ftext",{
-//     scrollTrigger:{
-//         trigger:".two",
-//         start:"5% 75%",
-//         end:"20% 50%",
-//         scrub:2,
-//     },
-//     duration:4,
-//     rotate:240,
-//     // ease:Expo.easeIn
-// })
-// gsap.to("#stext",{
-//     scrollTrigger:{
-//         trigger:".two",
-//         start:"5% 75%",
-//         end:"20% 50%",
-//         scrub:2,
-//     },
-//     duration:4,
-//     rotate:270,
-//     // ease:Expo.easeIn
-// })
+gsap.to("#ftext",{
+    scrollTrigger:{
+        trigger:".two",
+        start:"5% 75%",
+        end:"20% 50%",
+        scrub:2,
+    },
+    duration:4,
+    rotate:240,
+    // ease:Expo.easeIn
+})
+gsap.to("#stext",{
+    scrollTrigger:{
+        trigger:".two",
+        start:"5% 75%",
+        end:"20% 50%",
+        scrub:2,
+    },
+    duration:4,
+    rotate:270,
+    // ease:Expo.easeIn
+})
 
-// gsap.to("#ttext",{
-//     scrollTrigger:{
-//         trigger:".two",
-//         start:"5% 75%",
-//         end:"5% 20%",
-//         scrub:2,
-//         // markers:true
-//     },
-//     duration:4,
-//     rotate:-270,
-//     // ease:Expo.easeIn
-// })
+gsap.to("#ttext",{
+    scrollTrigger:{
+        trigger:".two",
+        start:"5% 75%",
+        end:"5% 20%",
+        scrub:2,
+        // markers:true
+    },
+    duration:4,
+    rotate:-270,
+    // ease:Expo.easeIn
+})
 
-// gsap.to("#innercir",{
-//     scrollTrigger:{
-//         trigger:".two",
-//         start:"5% 75%",
-//         end:"20% 50%",
-//         scrub:2,
-//     },
-//     duration:2,
-//     rotate:-360,
-//     scale:1.5,
-//     color:"black"
+gsap.to("#innercir",{
+    scrollTrigger:{
+        trigger:".two",
+        start:"5% 75%",
+        end:"20% 50%",
+        scrub:2,
+    },
+    duration:2,
+    rotate:-360,
+    scale:1.5,
+    color:"black"
     
-//     // ease:Expo.easeIn
-// })
+    // ease:Expo.easeIn
+})
 // gsap.from("#rtext h2",{
 //     scrollTrigger:{
 //         trigger:".cass",
