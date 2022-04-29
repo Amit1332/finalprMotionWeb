@@ -67,51 +67,51 @@ gsap.to("#innercir",{
     
     // ease:Expo.easeIn
 })
-// gsap.from("#rtext h2",{
-//     scrollTrigger:{
-//         trigger:".cass",
-//         start:"center center",
-//         // end:"5% 30%",
-//         scrub:2,
-//         // markers:true
-//     },
-//     duration:2,
-//     x:100,
-//     opacity:0
+gsap.from("#rtext h2",{
+    scrollTrigger:{
+        trigger:".cass",
+        start:"center center",
+        // end:"5% 30%",
+        scrub:2,
+        // markers:true
+    },
+    duration:2,
+    x:70,
+    opacity:0
     
-//     // ease:Expo.easeIn
-// })
+    // ease:Expo.easeIn
+})
 
-// let tl = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:".three",
-//         start:"center center",
-//         // end:"20% 50%",
-//         scrub:2,
-//         pin:true,
-//         markers:true
+let tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:".three",
+        start:"center center",
+        // end:"20% 50%",
+        scrub:2,
+        pin:true,
+        // markers:true
 
-//     }
-// })
-// tl.from(".three .photo",{
-//     y:300,
-//     duration:1,
-//     opacity:0,
-//     rotate:720,
+    }
+})
+tl.from(".three .photo",{
+    y:300,
+    duration:1,
+    opacity:0,
+    rotate:720,
     
-// })
-// tl.to(".three .photos",{
-//     left:"60%",
-//     // duration:1,
+})
+tl.to(".three .photos",{
+    left:"60%",
+    // duration:1,
 
 
-// })
-// tl.to(".abc",{
-//     left:"-100%",
-//     // duration:1,
+})
+tl.to(".abc",{
+    left:"-100%",
+    // duration:1,
 
 
-// })
+})
 // let tl2 = gsap.timeline({
 //     scrollTrigger:{
 //         trigger:".four",

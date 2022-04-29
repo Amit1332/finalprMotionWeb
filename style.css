@@ -585,6 +585,11 @@ color: white;
     height: 100vh;
 }
 
+.five .footer .ttxt h2{
+    
+    font-size: 15px;
+    
+}
 .footer .img{
     height: 30vh;
     width: 60%;
