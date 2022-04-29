@@ -112,136 +112,136 @@ tl.to(".abc",{
 
 
 })
-// let tl2 = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:".four",
-//         start:"center center",
-//         pin:true,
-//         scrub:2
-//     }
-// })
-// tl2.to(".poster",{
-//     y:-40,
-//     stagger:.3,
-//     opacity:1
+let tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".four",
+        start:"center center",
+        pin:true,
+        scrub:2
+    }
+})
+tl2.to(".poster",{
+    y:-40,
+    stagger:.3,
+    opacity:1
 
-// } ,"a")
-// tl2.to(".poster",{
-//     y:0,
-//     stagger:.3,
-//     delay:1,
-//     opacity:0
+} ,"a")
+tl2.to(".poster",{
+    y:0,
+    stagger:.3,
+    delay:1,
+    opacity:0
 
-// } ,"a")
+} ,"a")
 
-// tl2.to(".manythanks h1 span",{
-//     y:-80,
-//     stagger:.2
+tl2.to(".manythanks h1 span",{
+    y:-80,
+    stagger:.2
    
 
-// },"a")
+},"a")
 
-// tl2.to(".manythanks h1 span",{
-//     y:0,
-//     stagger:.2
+tl2.to(".manythanks h1 span",{
+    y:0,
+    stagger:.2
    
 
-// },"a")
+},"a")
 
-// let sig1=document.querySelector(".sig1")
-// let sig2=document.querySelector(".sig2")
-// let sig3=document.querySelector(".sig3")
-// let sig4=document.querySelector(".sig4")
+let sig1=document.querySelector(".sig1")
+let sig2=document.querySelector(".sig2")
+let sig3=document.querySelector(".sig3")
+let sig4=document.querySelector(".sig4")
 
 
-// document.querySelector("#first").addEventListener("mousemove",function(dets){
-//     sig1.style.left= `${dets.clientX}px`
-//     sig1.style.top= `${dets.clientY}px`
-//     sig1.style.display="block"
+document.querySelector("#first").addEventListener("mousemove",function(dets){
+    sig1.style.left= `${dets.clientX}px`
+    sig1.style.top= `${dets.clientY}px`
+    sig1.style.display="block"
     
   
 
-// })
-// document.querySelector("#first").addEventListener("mouseleave",function(dets){
-//     sig1.style.left= `${dets.clientX}px`
-//     sig1.style.top= `${dets.clientY}px`
-//     sig1.style.display="none"
+})
+document.querySelector("#first").addEventListener("mouseleave",function(dets){
+    sig1.style.left= `${dets.clientX}px`
+    sig1.style.top= `${dets.clientY}px`
+    sig1.style.display="none"
 
   
 
-// })
+})
 
 
-// document.querySelector("#second").addEventListener("mousemove",function(dets){
-//     sig2.style.left= `${dets.clientX}px`
-//     sig2.style.top= `${dets.clientY}px`
-//     sig2.style.display="block"
+document.querySelector("#second").addEventListener("mousemove",function(dets){
+    sig2.style.left= `${dets.clientX}px`
+    sig2.style.top= `${dets.clientY}px`
+    sig2.style.display="block"
     
 
 
   
 
-// })
-// document.querySelector("#second").addEventListener("mouseleave",function(dets){
-//     sig2.style.left= `${dets.clientX}px`
-//     sig2.style.top= `${dets.clientY}px`
-//     sig2.style.display="none"
+})
+document.querySelector("#second").addEventListener("mouseleave",function(dets){
+    sig2.style.left= `${dets.clientX}px`
+    sig2.style.top= `${dets.clientY}px`
+    sig2.style.display="none"
    
 
   
 
-// })
-// document.querySelector("#third").addEventListener("mousemove",function(dets){
-//     sig3.style.left= `${dets.clientX}px`
-//     sig3.style.top= `${dets.clientY}px`
-//     sig3.style.display="block"
+})
+document.querySelector("#third").addEventListener("mousemove",function(dets){
+    sig3.style.left= `${dets.clientX}px`
+    sig3.style.top= `${dets.clientY}px`
+    sig3.style.display="block"
 
 
   
 
-// })
-// document.querySelector("#third").addEventListener("mouseleave",function(dets){
-//     sig3.style.left= `${dets.clientX}px`
-//     sig3.style.top= `${dets.clientY}px`
-//     sig3.style.display="none"
+})
+document.querySelector("#third").addEventListener("mouseleave",function(dets){
+    sig3.style.left= `${dets.clientX}px`
+    sig3.style.top= `${dets.clientY}px`
+    sig3.style.display="none"
 
   
 
-// })
+})
 
 
-// let audio =document.querySelector("audio")
-// document.querySelector(".ri-medal-line").addEventListener("click",function(){
-//     audio.play()
-//     this.style.color="yellow"
-//     this.style.transform="scale(1.2)"
-// })
-// document.querySelector(".ri-medal-line").addEventListener("mouseleave",function(){
-//     audio.pause()
-//     this.style.color="crimson"
-//     this.style.transform="scale(1)"
+let audio =document.querySelector("audio")
+document.querySelector(".ri-medal-line").addEventListener("click",function(){
+    audio.play()
+    this.style.color="yellow"
+    this.style.transform="scale(1.2)"
+})
+document.querySelector(".ri-medal-line").addEventListener("mouseleave",function(){
+    audio.pause()
+    this.style.color="crimson"
+    this.style.transform="scale(1)"
 
 
-// })
+})
 
 
-// document.querySelectorAll(".ttxt h2").forEach(element => {
-//     element.addEventListener("mousemove",function(dets){
-//             gsap.to(".img-1",{
+document.querySelectorAll(".ttxt h2").forEach(element => {
+    element.addEventListener("mousemove",function(dets){
+            gsap.to(".img-1",{
                 
-//             x:dets.target.dataset.index*-100 + "%",
-//             ease:Expo.easeOut,
-//             duration:1.5,
-//             opacity:1
-//             })
-//     })
-//     element.addEventListener("mouseleave",function(dets){
-//         gsap.to(".img-1",{
-//         opacity:0
-//         })
-// })
+            x:dets.target.dataset.index*-100 + "%",
+            ease:Expo.easeOut,
+            duration:1.5,
+            opacity:1
+            })
+    })
+    element.addEventListener("mouseleave",function(dets){
+        gsap.to(".img-1",{
+        opacity:0
+        })
+})
    
-// });
+});
 
 
 
